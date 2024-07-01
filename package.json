@@ -1,0 +1,25 @@
+{
+  "_comment": " 'type: module' sert à utiliser les import/export dans le code à la place de require/module.exports",
+  "_comment2": " Dand le script 'dev' je charge les variables d'environnement du fichier .env pour pas importer partout par la suite",
+  "name": "paysanscoin-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "dev": "nodemon -r dotenv/config index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "pg": "^8.12.0",
+    "sequelize": "^6.37.3"
+  }
+}
