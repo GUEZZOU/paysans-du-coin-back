@@ -2,4 +2,4 @@
 # Lorsque c'est un dossier on termine par un "/"
 
 node_modules/
-.env
+.env // Fichier contenant les variables d'environnement (clés API, etc.)

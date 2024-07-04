@@ -1,13 +1,16 @@
 {
   "_comment": " 'type: module' sert à utiliser les import/export dans le code à la place de require/module.exports",
   "_comment2": " Dand le script 'dev' je charge les variables d'environnement du fichier .env pour pas importer partout par la suite",
+  "_comment3": " 'test': 'jest' permet de lancer les tests avec la commande 'npm test'",
+  "_comment4": " -r dotenv/config  permet de charger les variables d'environnement du fichier .env pour pas importer partout par la suite ",
+  
   "name": "paysanscoin-back",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node -r dotenv/config index.js",
+     "start": "node -r dotenv/config index.js",
     "dev": "nodemon -r dotenv/config index.js",
     "test": "jest"
   },
